@@ -12,19 +12,19 @@
         At least two levels of headers (1-All About Hunter Da Bomb Adam, 2-Hunter Da Bomb's Vehicles)
         At least one paragraph, probably more [no comment needed, this should be obvious)
         At least three HTML text formats (not CSS). Do not use <b> or <i>. (1-em , 2-del , 3-mark )
-        At least one quotation or other item from Quotation and Citation page ( )
-        At least one hyperlink to an external site, open in new window/tab ( )
-        At least one mailto ( )
-        At least one list ( )
-        At least one image, placed inside folder named images ( )
+        At least one quotation or other item from Quotation and Citation page (https://en.wikipedia.org/wiki/Ford_Excursion)
+        At least one hyperlink to an external site, open in new window/tab (https://en.wikipedia.org/wiki/Ford_Excursion)
+        At least one mailto (mailto:hadam@mines.edu)
+        At least one list (list of cars)
+        At least one image, placed inside folder named images (images/FriendsWithExcursion.JPG)
         - use the style attribute to specify size (can be just width or height)
 
         - do NOT use a complete path for your image... that path won't work on other machines
-        At least one HTML code snippet ( )
-        At least one line break ( )
-        At least one horizontal rule ( )
-        At least one HTML entity or symbol, can be part of code snippet ( )
-        At least one HTML symbol ( ) that is NOT part of your code snippet
+        At least one HTML code snippet (<pre><code>)
+        At least one line break (<br>)
+        At least one horizontal rule (<hr>)
+        At least one HTML entity or symbol, can be part of code snippet (&lt; or &gt;)
+        At least one HTML symbol (&copy;) that is NOT part of your code snippet
 
     -->
     <body>
@@ -35,9 +35,48 @@
             I am a senior in <em>Computer Science</em> at Colorado School of Mines. I am also getting a minor in Electrical Engineering. <br>
             <del>People think I smell like chicken.</del>
         </p>
+        <hr>
         <h2>
             <mark>Hunter Da Bomb's Vehicles</mark>
         </h2>
+        <p>
+            My favorite vehicle is my <mark>6.0L Powerstroke 2004 Ford Excursion.</mark> <br>
+            Here is a litte bit of information on my Ford Excursion:
+        </p>
+        <blockquote cite="https://en.wikipedia.org/wiki/Ford_Excursion">
+            The Ford Excursion is a heavy duty (Class 2), full-sized SUV that was sold by Ford from 2000 to 2005. 
+            The third SUV derived from the Ford F-Series (after the Ford Bronco and the Ford Expedition), 
+            the model line was the longest and heaviest SUV ever to enter mass production at the time.
+        </blockquote>
+        <p>
+            To read more on this beatiful beast of a truck/suv, visit <a target="_blank" href="https://en.wikipedia.org/wiki/Ford_Excursion">here</a>. <br>
+            Or you could <a href="mailto:hadam@mines.edu">email</a> me and I will tell you everything I know.
+        </p>
+        Here is a list of my vehicles:
+        <ul>
+            <li>2006 Ford Fusion</li>
+            <li>2004 Ford Excursion</li>
+            <li>1997 Honda Shadow</li>
+            <li>1987 Honda Rebel</li>
+            <li>1986 Honda Rebel</li>
+        </ul>
+        <p>
+            Picture of my friends and I in front of the legendary Ford Excursion.
+        </p>
+        <img src="images/FriendsWithExcursion.JPG" alt="Friends With Excursion" style="width:350px;height:600px;">
 
+        <p>
+            This is what the code looks like for the list: <br>
+            <pre><code>
+                &lt;ul&gt;
+                    &lt;li&gt;2006 Ford Fusion&lt;/li&gt;
+                    &lt;li&gt;2004 Ford Excursion&lt;/li&gt;
+                    &lt;li&gt;1997 Honda Shadow&lt;/li&gt;
+                    &lt;li&gt;1987 Honda Rebel&lt;/li&gt;
+                    &lt;li&gt;1986 Honda Rebel&lt;/li&gt;
+                &lt;/ul&gt;
+            </code></pre>
+        </p>
+        &copy; Hunter Corp
     </body>
 </html>
