@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.excited {
+    text-transform: uppercase;
+    text-shadow: blue 2px 2px;
+}
+
+#knowSelectors {
+    font-style: italic;
+    color: purple;
+    font-size: 2em;
+}
+
+.warning {
+    color: red;
+    font-family: Apple Chancery, cursive;
+}
+
+#remember {
+    background-color: yellow;
+    font-family: sans-serif;
+}
+
+.standout {
+    border-color: blue;
+    border-style: dashed solid dashed solid;
+    border-radius: 5px;
+    border-width: 2px 2px 5px 2px;
+    font-weight: bold;
+}
+
+ul {
+    background-color: #ff9999;
+}
+
+li {
+    list-style: square;
+    background-color: #ffe5e5;
+}
