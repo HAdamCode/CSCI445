@@ -1,0 +1,29 @@
+#sidebar {
+    position: fixed;
+    top: 65px;
+    right: 8px;
+    max-width: 80px;
+    color: blue;
+    background-color: cyan;
+}
+
+h1 {
+    position: -webkit-sticky;
+    top: 0;
+    height: 40px;
+    background-color: green;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4CAF50;
+}
+
+#shy {
+    float: right;
+}
+
+#lotsaText {
+    position: relative;
+    left: 500px;
+    background-color: orange;
+    max-width: 100px;
+}
