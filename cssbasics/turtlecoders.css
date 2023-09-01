@@ -2,7 +2,11 @@
 	Style for Unit 2, Part IV
 
 /* Styles here for the body */
-
+body {
+    background-color: #f4ffe4;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
 /* Styling for the wrapper and content includes
 
     The wrapper is centered and takes 80% of the space
@@ -13,6 +17,14 @@
 	appear if the window size is too small.
 */
 
+#wrapper {
+    margin: auto;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+    min-height: 550px;
+    min-width: 600px;
+}
 
 /* Styling for the header includes
 
@@ -22,6 +34,24 @@
     A rounded border (I used a color of #333333 and rounded 15px)
 	A logo on the right side (hint: use background-image... google!)
 */
+header {
+    background-color: #d5edb3;
+    border-radius: 15px 15px 15px 15px;
+    border-color: #333333;
+    border-style: solid;
+    height: 80px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/162/301/non_2x/cartoon-baby-turtle-in-the-field-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    background-blend-mode: darken;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px #aca7a7;
+}
 
 
 /* Styling for the nav menu includes
@@ -35,11 +65,32 @@
     There is some white space between menu items
 */
 
+nav {
+    text-indent: 2rem;
+}
+nav a {
+    background-color: #98bf21;
+    color: #333333;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px;
+}
+
 
 /* Headers should use a reasonable serif font and generic family */
 
+h1, h2 {
+    font-family: "Georgia", serif;
+}
 
 /* The company name should always be bold, no matter where it appears */
+
+.company_name {
+    font-weight: bold;
+}
 
 /* Styling for the company motto includes:
 
@@ -47,9 +98,26 @@
     a ridge border with an extra thick left border and color (#99aa33) 
 */
 
+.motto {
+    text-align: center;
+    font-style: italic;
+    border-style: ridge;
+    border-color: #99aa33;
+    border-left-width: 20px;
+}
+
 /* The introduction paragraph should be indented.  Other paragraphs should not. */
 
+#intro {
+    text-indent: 2rem;
+}
+
 /* The list of services should have a line spacing of 1.5 */
+
+ul {
+    line-height: 1.5;
+    list-style-type: square;
+}
 
 
 
