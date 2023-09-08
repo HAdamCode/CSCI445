@@ -1,69 +1,91 @@
 <!DOCTYPE html>
 <!-- https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824 -->
 <html lang="en">
+
 <head>
 	<title>Exploring HTML5 and RWD</title>
 	<meta charset="UTF-8">
 	<meta name="author" content="Cyndi Rader">
 	<link rel="stylesheet" href="html5Example.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
-<header> 
-	<h1>Learn CSS now!</h1>
-</header>
-<div id="menus">
-</div>
-<article>
-	<h2>Importance of CSS</h2>
-	<p>Anyone who wants to program web pages should have some 
-	understanding of <span class="a">CSS</span> Some reasons paraphrased from 
-	<a href="https://bootcamp.ce.ucf.edu/blog/why-everyone-should-learn-html-css/">
-	bootcamp</a>:</p>
-	<ul>
-		<li><span class="a">CSS</span> is a fundamental part of the web</li>
-		<li>You (or someone you know) may want to create your own site - be
-			an entrepeneur!</li>
-		<li>You can create <em>unique</em> websites - strut your stuff!</li>
-		<li>You can make more money - are you a full-stack developer?</li>
-	</ul>
-	<p>Another reason: it will challenge how you think about programming. 
-	<span class="a">CSS</span> is NOT like other languages! Embrace it and you'll expand your
-	flexibility.</p>
-</article>
-<article>
-	<h2>Why cats are so cool</h2>
-	<p>No offense to dogs (they're great too), but cats are just awesome. 
-		<span class="material-symbols-outlined">
-			bug_report
+	<nav class="topnav" id="myTopnav">
+		<a href="html5Example.html">Home</a>
+		<a href="basicsEx.html">Basics</a>
+		<a href="spacingEx.html">Spacing</a>
+		<a href="positionEx.html">Positioning</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</nav>
+	<header>
+		<h1>Learn CSS now!</h1>
+	</header>
+	<article>
+		<h2>Importance of CSS</h2>
+		<p>Anyone who wants to program web pages should have some
+			understanding of <span class="a">CSS</span> Some reasons paraphrased from
+			<a href="https://bootcamp.ce.ucf.edu/blog/why-everyone-should-learn-html-css/">
+				bootcamp</a>:
+		</p>
+		<ul>
+			<li><span class="a">CSS</span> is a fundamental part of the web</li>
+			<li>You (or someone you know) may want to create your own site - be
+				an entrepeneur!</li>
+			<li>You can create <em>unique</em> websites - strut your stuff!</li>
+			<li>You can make more money - are you a full-stack developer?</li>
+		</ul>
+		<p>Another reason: it will challenge how you think about programming.
+			<span class="a">CSS</span> is NOT like other languages! Embrace it and you'll expand your
+			flexibility.
+		</p>
+	</article>
+	<article>
+		<h2>Why cats are so cool</h2>
+		<p>No offense to dogs (they're great too), but cats are just awesome.
+			<span class="material-symbols-outlined">
+				bug_report
 			</span>
-	<a href="https://pethelpful.com/cats/10-Reasons-Why-Cats-Are-Awesome">
-	Pethelpful</a> provides a list of 10 reasons:</p>
-	<ol>
-		<li>They are independent</li>
-		<li>They can use the bathroom</li>
-		<li>They don't need exercise</li>
-		<li>They are good with kids</li>
-		<li>They keep quiet</li>
-		<li>They are clean</li>
-		<li>They can be inside their entire lives</li>
-		<li>They are natural hunters</li>
-		<li>They are hilarious</li>
-		<li>They are intuitive</li>
-	</ol>
-	<p>I know what some of you are thinking... exercise is good! Outside
-	is good! No doubt. But I bet your dog has never done this!</p>
-	<figure>
-		<img src="images/QinCabinet.jpg" alt="Cat in cabinet" style="width: 25%;" >
-		<p>The cat is in the cabinet - wash those dishes!</p>
-	</figure>
-</article>
-<aside>
-	<p>Hey, my name is Hunter, and here are some 
-	   thoughts I want to share with you. I love cool cars. I also love cool motorcycles. </p>
-</aside>
-<footer>
-	<p>Examples are free to use. No &copy; - hope you enjoy!</p>
-</footer>
+			<a href="https://pethelpful.com/cats/10-Reasons-Why-Cats-Are-Awesome">
+				Pethelpful</a> provides a list of 10 reasons:
+		</p>
+		<ol>
+			<li>They are independent</li>
+			<li>They can use the bathroom</li>
+			<li>They don't need exercise</li>
+			<li>They are good with kids</li>
+			<li>They keep quiet</li>
+			<li>They are clean</li>
+			<li>They can be inside their entire lives</li>
+			<li>They are natural hunters</li>
+			<li>They are hilarious</li>
+			<li>They are intuitive</li>
+		</ol>
+		<p>I know what some of you are thinking... exercise is good! Outside
+			is good! No doubt. But I bet your dog has never done this!</p>
+		<figure>
+			<img src="images/QinCabinet.jpg" alt="Cat in cabinet" style="width: 25%;">
+			<p>The cat is in the cabinet - wash those dishes!</p>
+		</figure>
+	</article>
+	<aside>
+		<p>Hey, my name is Hunter, and here are some
+			thoughts I want to share with you. I love cool cars. I also love cool motorcycles. </p>
+	</aside>
+	<footer>
+		<p>Examples are free to use. No &copy; - hope you enjoy!</p>
+	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "") {
+				x.className += "responsive";
+			} else {
+				x.className = "";
+			}
+		}
+	</script>
 </body>
+
 </html>
