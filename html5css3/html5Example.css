@@ -1,18 +1,110 @@
 /* Style the header, including text shadow */
 
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-shadow: black 1px 0 10px;
+}
+
 /* Style the footer */
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
 
 /* Style the aside, including the paragraph */
 
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 20%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+aside p {
+  color: #281e80;
+  font-family: Arial, sans-serif;
+}
+
 /* Style the articles */
+
+article {
+  background-color: lightblue;
+}
 
 /* Style the figure, including opacity */
 
+figure {
+  margin-bottom: 15px;
+}
+
+figure.pointer {
+  cursor: pointer;
+}
+
+figure img {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+figure:hover {
+  background-color: #e40d0d;
+  opacity: 1;
+}
+
 /* Style the anchor and links */
+
+a {
+  text-decoration: red wavy underline;
+  text-decoration-skip-ink: none;
+}
+
+a:link {
+  font-weight: bold;
+}
+
+a:visited {
+  color: rgb(231, 138, 16);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #1f1511;
+  text-decoration: line-through;
+}
 
 /* Style the pseudo-element */
 
+p::first-letter {
+  color: #ff00c8;
+}
 
 /* Style the inline-block */
 
+span.a {
+  display: inline-block;
+  font-size: 1.2em;
+  vertical-align: middle;
+  background-color: aquamarine;
+}
+
 /* Add other styles as you see fit */
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
