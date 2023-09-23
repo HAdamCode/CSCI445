@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="quiz.css">
+    <title>Harry Potter Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1>Harry Potter Quiz</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Question (select a category below)</h2>
+            <section class="questionBoxWrapper">
+                <p class="questionBox"></p>
+            </section>
+            <h2>Answer:</h2>
+            <section class="answerBox">
+                <label>
+                    <input type="radio" name="q1" value="true"> True
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="q1" value="false"> False
+                </label>
+                <br>
+                <div class="checkWrapper">
+                <button class="check">Check Answer</button>
+            </div>
+                <p class="correct"></p>
+            </section>
+            <section>
+                <button class="harry">Harry</button>
+                <button class="hermione">Hermione</button>
+                <button class="ron">Ron</button>
+                <button class="quidditch">Quidditch</button>
+            </section>
+        </div>
+
+    </main>
+    <aside id="attempted-questions">
+        <h2>Questions History</h2>
+        <ul>
+        </ul>
+        <br>
+        <p style="display: none;" class="Finished">You're all done</p>
+    </aside>
+    <footer>
+        <p>Created by Hunter Adam, just for fun</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
