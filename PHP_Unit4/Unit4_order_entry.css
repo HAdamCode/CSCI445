@@ -1,0 +1,20 @@
+#left {
+    width: 50%;
+    height: 620px;
+    float: left;
+}
+
+#right {
+    width: 50%;
+    height: 620px;   
+}
+
+input[type="reset"] {
+    background-color: #cc2900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
