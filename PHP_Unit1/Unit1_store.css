@@ -1,0 +1,70 @@
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+select {
+    appearance: none;
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#left-content {
+    flex: 1;
+    padding: 20px;
+}
+
+#product-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product-image {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+
+label[for]:after {
+    content: " *";
+    color: #f00;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
